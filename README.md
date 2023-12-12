@@ -17,6 +17,7 @@
     name: my-chart
     repository: appany
     tag: 0.1.0
+    app_version: 0.1.0
     path: charts/my-chart # Default charts/{name}
     registry: ghcr.io
     registry_username: ${{ secrets.REGISTRY_USERNAME }}
@@ -56,6 +57,9 @@ inputs:
   tag:
     required: true
     description: Chart version
+  app_version:
+    required: true
+    description: App version
   path:
     required: false
     description: Chart path (Default 'charts/{name}')
